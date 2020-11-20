@@ -9,7 +9,7 @@
 
 header {
     width: 100%;
-    height: 45vh;
+    height: 315px;
     position: relative;
 }
 
@@ -136,7 +136,7 @@ header {
 
 .list-container {
     width: 100%;
-    height: 10vh;
+    height: 75px;
     background-color: #323438;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -203,6 +203,6 @@ header {
 
 #galeria {
     width: 100%;
-    height: 100vh;
-    background-color: #323232;
+    height: 705px;
+    background-color: #323438;
 }
