@@ -5,7 +5,7 @@ const þ = console.log;
 let pCS = {
 
    section: $$('.move-container-slide'),
-   slide: $('#container'),
+   slide: $('.container-slide'),
    btn: $$('.btn-slide'),
    item: 0
 
@@ -29,6 +29,8 @@ let mCS = {
    moveContainerSlide: e => {
 
       pCS.item = e.target.getAttribute("item") - 1;
+      
+      pCS.slide.style.left = ` ${ pCS.item * -100 }% `;
 
    }
 
