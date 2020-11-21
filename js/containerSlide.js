@@ -6,7 +6,7 @@ let pCS = {
 
    section: $$('.move-container-slide'),
    slide: $('#container'),
-   btn: $$('.list-btn'),
+   btn: $$('.btn-slide'),
    item: 0
 
 }
@@ -28,7 +28,7 @@ let mCS = {
 
    moveContainerSlide: e => {
 
-      þ(e.target);
+      pCS.item = e.target.getAttribute("item") - 1;
 
    }
 
