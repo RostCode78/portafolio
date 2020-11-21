@@ -29,7 +29,6 @@ let mCS = {
    moveContainerSlide: e => {
 
       pCS.item = e.target.getAttribute("item") - 1;
-      
       pCS.slide.style.left = ` ${ pCS.item * -100 }% `;
 
    }

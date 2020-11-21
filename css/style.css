@@ -249,6 +249,7 @@ header {
     display: flex;
     flex-direction: row;
     position: relative;
+    left: -200%;
     transition: .4s ease;
 }
 
