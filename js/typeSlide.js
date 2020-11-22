@@ -26,7 +26,7 @@ let mTS = {
 
          pTS.line.style.left = "0%";
 
-      } else {
+      } else if ( e.target == pTS.btn[1] ) {
 
          pTS.line.style.left = "50%";
 
