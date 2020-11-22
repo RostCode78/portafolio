@@ -5,7 +5,6 @@ const þ = console.log;
 let pCS = {
 
    container: $('#container'),
-   section: $$('.move-container-slide'),
    slide: $('.container-slide'),
    btn: $$('.btn-slide'),
    item: 0
