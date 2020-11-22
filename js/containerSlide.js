@@ -4,6 +4,7 @@ const þ = console.log;
 
 let pCS = {
 
+   container: $('#container'),
    section: $$('.move-container-slide'),
    slide: $('.container-slide'),
    btn: $$('.btn-slide'),
@@ -30,6 +31,17 @@ let mCS = {
 
       pCS.item = e.target.getAttribute("item") - 1;
       pCS.slide.style.left = ` ${ pCS.item * -100 }% `;
+      pCS.container.style.transition = ".4s";
+
+      if( pCS.item == 2 ) {
+
+         pCS.container.style.height = "1188px";
+
+      } else {
+
+         pCS.container.style.height = "792px";
+
+      }
 
    }
 
