@@ -440,10 +440,30 @@ header {
     background-color: #ddcd52;
 }
 
+.background-web-image2 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/portafolio/web/2.png');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+}
+
 .gallery-web-box3 {
     position: relative;
     overflow: hidden;
     background-color: #98dd52;
+}
+
+.background-web-image3 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/portafolio/web/3.png');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
 }
 
 .gallery-web-box4 {
@@ -452,16 +472,46 @@ header {
     background-color: #52dd79;
 }
 
+.background-web-image4 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/portafolio/web/4.png');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+}
+
 .gallery-web-box5 {
     position: relative;
     overflow: hidden;
     background-color: #52dddb;
 }
 
+.background-web-image5 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/portafolio/web/5.png');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+}
+
 .gallery-web-box6 {
     position: relative;
     overflow: hidden;
     background-color: #528edd;
+}
+
+.background-web-image6 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/portafolio/web/6.png');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
 }
 
 
