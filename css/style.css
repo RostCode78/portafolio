@@ -237,7 +237,7 @@ header {
 
 #container {
     width: 100%;
-    height: 1188px;
+    height: 1488px;
     overflow: hidden;
     background-color: #323438;
 }
@@ -282,6 +282,7 @@ header {
     height: 100%;
     position: absolute;
     right: -200%;
+    overflow: hidden;
 }
 
 .gallery-top {
@@ -365,7 +366,7 @@ header {
 
 .gallery-bottom {
     width: 100%;
-    height: 908px;
+    height: 1208px;
 }
 
 .container-gallery-slide {
@@ -385,13 +386,6 @@ header {
     right: 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(475px, 1fr));
-}
-
-@media (max-width: 768px) {
-    .gallery-web {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    }
 }
 
 .gallery-design {
@@ -523,10 +517,30 @@ header {
     background-color: #883535;
 }
 
+.background-design-image1 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/portafolio/design/logos/g1435.png');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+}
+
 .gallery-design-box2 {
     position: relative;
     overflow: hidden;
     background-color: #886b35;
+}
+
+.background-design-image2 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/portafolio/design/layout/g124.png');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
 }
 
 .gallery-design-box3 {
@@ -535,10 +549,30 @@ header {
     background-color: #518835;
 }
 
+.background-design-image3 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/portafolio/design/lonas/g9010.png');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+}
+
 .gallery-design-box4 {
     position: relative;
     overflow: hidden;
     background-color: #358876;
+}
+
+.background-design-image4 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/portafolio/design/mockup/g1188.png');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
 }
 
 .gallery-design-box5 {
@@ -547,16 +581,36 @@ header {
     background-color: #356b88;
 }
 
+.background-design-image5 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/portafolio/design/portadas/portada-youtube.png');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+}
+
 .gallery-design-box6 {
     position: relative;
     overflow: hidden;
     background-color: #633588;
 }
 
+.background-design-image6 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/portafolio/design/post/3.png');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+}
+
 
 /* GENERAL */
 
-.background-web-opacity {
+.background-opacity {
     width: 100%;
     height: 100%;
     background-color: #303030e6;
@@ -577,12 +631,14 @@ header {
     right: -100%;
 }
 
-.background-web-opacity h2 {
+.background-opacity h2 {
     font-size: 2em;
     margin-bottom: 10px;
 }
 
-.background-web-opacity p {
+.background-opacity p {
+    width: 90%;
+    height: auto;
     font-size: 1em;
     text-align: center;
     margin-bottom: 10px;
@@ -714,6 +770,30 @@ header {
     right: 0%;
 }
 
+.gallery-design-box1:hover .hover-left {
+    left: 0%;
+}
+
+.gallery-design-box2:hover .hover-right {
+    right: 0%;
+}
+
+.gallery-design-box3:hover .hover-left {
+    left: 0%;
+}
+
+.gallery-design-box4:hover .hover-right {
+    right: 0%;
+}
+
+.gallery-design-box5:hover .hover-left {
+    left: 0%;
+}
+
+.gallery-design-box6:hover .hover-right {
+    right: 0%;
+}
+
 
 /* =========== DATA =========== */
 
@@ -766,9 +846,6 @@ header {
 
 @media (max-width: 425px) {
     .gallery-bottom {
-        height: 1208px
-    }
-    #container {
-        height: 1488px;
+        height: 1208px;
     }
 }

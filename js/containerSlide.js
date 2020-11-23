@@ -34,7 +34,7 @@ let mCS = {
 
       if( pCS.item == 2 ) {
 
-         pCS.container.style.height = "1188px";
+         pCS.container.style.height = "1488px";
 
       } else {
 
