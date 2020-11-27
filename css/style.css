@@ -1,10 +1,145 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: sans-serif;
     color: #f9f5f4;
     text-decoration: none;
     list-style: none;
+}
+
+
+/*===============================
+=             MODAL             =
+===============================*/
+
+#modal {
+    width: 100%;
+    height: 100vh;
+    background-color: #e6e6e6;
+    display: none;
+    position: fixed;
+    z-index: 1000;
+}
+
+.cerrar-btn-modal {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10000;
+    font-size: 2em;
+    transition: .2s ease-in-out;
+    overflow: hidden;
+}
+
+.cerrar-btn-modal:hover {
+    background-color: #3d3f44;
+}
+
+.exit-gallery-modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+}
+
+.titulo-modal {
+    width: 230px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 75px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.line-modal {
+    width: 45px;
+    height: 3px;
+    background-color: #f9f5f4;
+}
+
+.titulo-modal p {
+    font-size: 1.4em;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.background-top {
+    width: 100%;
+    height: 65%;
+    background-color: #323438;
+    position: absolute;
+    z-index: 1;
+}
+
+.modal-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+}
+
+.mc-top {
+    width: 100%;
+    height: 73%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.img-container {
+    width: 85%;
+    height: 85%;
+}
+
+.ic-image {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.image-modal-0 {
+    background-image: url('../img/portafolio/modal/web-0/1.png');
+}
+
+.btn-modal-slide {
+    width: 100%;
+    height: 100px;
+    top: 50%;
+    position: absolute;
+    z-index: 1000;
+}
+
+.btn-left-modal {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: auto;
+    left: 10px;
+}
+
+.btn-right-modal {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: blue;
+    position: absolute;
+    top: auto;
+    right: 10px;
 }
 
 
@@ -703,6 +838,8 @@ header {
     justify-content: center;
     align-items: center;
     transition: .2s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .web-links li:nth-child(2) a:hover {
@@ -711,6 +848,13 @@ header {
 
 .web-links li:nth-child(2) a:active {
     box-shadow: 1px 1px 8px #00000052, -1px -1px 8px #ffffff52, inset 1px 1px 8px #0000002c, inset -1px -1px 8px #ffffff2c;
+}
+
+.open-gallery-modal {
+    width: 100%;
+    height: 100%;
+    background-color: #00000000;
+    position: absolute;
 }
 
 .web-links li:nth-child(3) {
