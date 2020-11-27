@@ -1,8 +1,11 @@
 let pMS = {
-
+   
    slide: $('.img-container-slide'),
+   moveSlide: $$('.move-slide'),
    next: $('.btn-next'),
    prev: $('.btn-prev'),
+   longItems: 0,
+   list: [],
    item: 0
 
 }
@@ -11,7 +14,11 @@ let mMS = {
 
    start: () => {
 
-      
+      pMS.moveSlide.forEach( e => {
+
+         pMS.list.push(e);
+
+      });
 
       pMS.next.addEventListener(
          'click',
@@ -23,14 +30,48 @@ let mMS = {
          mMS.prev
       );
 
+      þ(pMS.list);
+
+      pMS.longItems = pMS.list.length - 1;
+
    },
 
    next: () => {
-      þ('NEXT')
+
+      if ( pMS.item == pMS.longItems ) {
+
+         pMS.item = 0;
+
+      } else {
+
+         pMS.item++;
+
+      }
+
+      mMS.moveSlide(pMS.item);
+
    },
 
    prev: () => {
-      þ("PREV")
+
+      if ( pMS.item == 0 ) {
+
+         pMS.item = pMS.longItems;
+
+      } else {
+
+         pMS.item--;
+
+      }
+
+      mMS.moveSlide(pMS.item);  
+      
+   },
+
+   moveSlide: item => {
+      
+      pMS.slide.style.left = ` ${ item * -100 }% `;
+
    }
 
 }
