@@ -100,18 +100,33 @@
 .img-container {
     width: 85%;
     height: 85%;
+    overflow: hidden;
+}
+
+.img-container-slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    transition: .4s ease;
 }
 
 .ic-image {
     width: 100%;
     height: 100%;
+    position: absolute;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
-.image-modal-0 {
+.image-modal-0-1 {
     background-image: url('../img/portafolio/modal/web-0/1.png');
+}
+
+.image-modal-0-2 {
+    background-image: url('../img/portafolio/modal/web-0/2.png');
+    left: 100%;
 }
 
 .btn-modal-slide {
@@ -126,20 +141,44 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: red;
+    background-color: #323438;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
     position: absolute;
     top: auto;
     left: 10px;
+    cursor: pointer;
 }
 
 .btn-right-modal {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: blue;
+    background-color: #323438;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
     position: absolute;
     top: auto;
     right: 10px;
+    cursor: pointer;
+}
+
+.btn-next {
+    width: 100%;
+    height: 100%;
+    background-color: #00000000;
+    position: absolute;
+}
+
+.btn-prev {
+    width: 100%;
+    height: 100%;
+    background-color: #00000000;
+    position: absolute;
 }
 
 
