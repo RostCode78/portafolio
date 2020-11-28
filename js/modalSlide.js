@@ -30,8 +30,6 @@ let mMS = {
          mMS.prev
       );
 
-      þ(pMS.list);
-
       pMS.longItems = pMS.list.length - 1;
 
    },

@@ -120,13 +120,43 @@
     background-size: contain;
 }
 
+
+/* Web */
+
 .image-modal-0-1 {
-    background-image: url('../img/portafolio/modal/web-0/1.png');
+    background-image: url('../img/portafolio/modal/web/0/0.png');
 }
 
 .image-modal-0-2 {
-    background-image: url('../img/portafolio/modal/web-0/2.png');
+    background-image: url('../img/portafolio/modal/web/0/1.png');
     left: 100%;
+}
+
+
+/* Design */
+
+.image-modal-6-1 {
+    background-image: url('../img/portafolio/modal/design/6/1.webp');
+}
+
+.image-modal-6-2 {
+    background-image: url('../img/portafolio/modal/design/6/2.webp');
+    left: 100%;
+}
+
+.image-modal-6-3 {
+    background-image: url('../img/portafolio/modal/design/6/3.webp');
+    left: 200%;
+}
+
+.image-modal-6-4 {
+    background-image: url('../img/portafolio/modal/design/6/4.webp');
+    left: 300%;
+}
+
+.image-modal-6-5 {
+    background-image: url('../img/portafolio/modal/design/6/5.webp');
+    left: 400%;
 }
 
 .btn-modal-slide {

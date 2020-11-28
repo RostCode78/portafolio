@@ -1,9 +1,25 @@
+let web0 = `
+<div class="ic-image image-modal-0-1 move-slide"></div>
+<div class="ic-image image-modal-0-2 move-slide"></div>
+`;
+
+// DESIGN
+
+let design6 = `
+<div class="ic-image image-modal-6-1 move-slide"></div>
+<div class="ic-image image-modal-6-2 move-slide"></div>
+<div class="ic-image image-modal-6-3 move-slide"></div>
+<div class="ic-image image-modal-6-4 move-slide"></div>
+<div class="ic-image image-modal-6-5 move-slide"></div>
+`;
+
 let pGM = {
 
    btnOpen: $$('.open-gallery-modal'),
    btnExit: $('.exit-gallery-modal'),
+   moveSlide: null,
    titulo: $('.titulo-modal'),
-   image: $('.img-container'),
+   image: $('.img-container-slide'),
    modal: $('#modal'),
    body: $('body'),
    item: 0,
@@ -49,6 +65,7 @@ let mGM = {
       switch (pGM.item) {
          case 0:
             pGM.titulo.innerHTML = pGM.web;
+            pGM.image.innerHTML = web0;
          break;
 
          case 1:
@@ -73,6 +90,7 @@ let mGM = {
 
          case 6:
             pGM.titulo.innerHTML = pGM.design;
+            pGM.image.innerHTML = design6;
          break;
 
          case 7:
@@ -95,6 +113,14 @@ let mGM = {
             pGM.titulo.innerHTML = pGM.design;
          break;
       }
+
+      pGM.moveSlide = $$('.move-slide');
+
+      pGM.moveSlide.forEach( e => {
+
+         þ(e);
+
+      })
 
    },
 
