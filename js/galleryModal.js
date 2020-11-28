@@ -1,3 +1,5 @@
+// WEB
+
 let web0 = `
 <div class="ic-image image-modal-0-1 move-slide"></div>
 <div class="ic-image image-modal-0-2 move-slide"></div>
@@ -17,7 +19,7 @@ let pGM = {
 
    btnOpen: $$('.open-gallery-modal'),
    btnExit: $('.exit-gallery-modal'),
-   moveSlide: null,
+   getSlide: null,
    titulo: $('.titulo-modal'),
    image: $('.img-container-slide'),
    modal: $('#modal'),
@@ -30,7 +32,13 @@ let pGM = {
    design: `
    <div class="line-modal"></div>
    <p>Diseño Grafico</p>
-`
+   `,
+   list: [],
+   lastList: 0,
+   longList: 0,
+   next: $('.btn-next'),
+   prev: $('.btn-prev'),
+   itemModal: 0
 
 }
 
@@ -50,6 +58,16 @@ let mGM = {
       pGM.btnExit.addEventListener(
          'click',
          mGM.exitModal
+      );
+
+      pGM.next.addEventListener(
+         'click',
+         mGM.next
+      );
+
+      pGM.prev.addEventListener(
+         'click',
+         mGM.prev
       );
 
    },
@@ -114,13 +132,16 @@ let mGM = {
          break;
       }
 
-      pGM.moveSlide = $$('.move-slide');
+      pGM.getSlide = $$('.move-slide');
 
-      pGM.moveSlide.forEach( e => {
+      pGM.getSlide.forEach( e => {
 
-         þ(e);
+         pGM.list.push(e);
 
-      })
+      });
+
+      pGM.lastList = pGM.list.length;
+      pGM.longList = pGM.list.length - 1;
 
    },
 
@@ -128,6 +149,48 @@ let mGM = {
 
       pGM.modal.style.display = "none";
       pGM.body.style.overflow = "initial";
+
+      pGM.list = pGM.list.splice(pGM.lastList);
+      pGM.itemModal = 0;
+      pGM.image.style.left = '0%';
+
+   },
+
+   next: () => {
+
+      if ( pGM.itemModal == pGM.longList ) {
+
+         pGM.itemModal = 0;
+
+      } else {
+
+         pGM.itemModal++;
+
+      }
+
+      mGM.moveSlide(pGM.itemModal);
+
+   },
+
+   prev: () => {
+
+      if ( pGM.itemModal == 0 ) {
+
+         pGM.itemModal = pGM.longList;
+
+      } else {
+
+         pGM.itemModal--;
+
+      }
+
+      mGM.moveSlide(pGM.itemModal);  
+      
+   },
+
+   moveSlide: item => {
+      
+      pGM.image.style.left = ` ${ item * -100 }% `;
 
    }
 
