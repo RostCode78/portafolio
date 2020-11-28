@@ -5,6 +5,32 @@ let web0 = `
 <div class="ic-image image-modal-0-2 move-slide"></div>
 `;
 
+let web1 = `
+<div class="ic-image image-modal-1-1 move-slide"></div>
+<div class="ic-image image-modal-1-2 move-slide"></div>
+`;
+
+let web2 = `
+<div class="ic-image image-modal-2-1 move-slide"></div>
+<div class="ic-image image-modal-2-2 move-slide"></div>
+<div class="ic-image image-modal-2-3 move-slide"></div>
+`;
+
+let web3 = `
+<div class="ic-image image-modal-3-1 move-slide"></div>
+<div class="ic-image image-modal-3-2 move-slide"></div>
+<div class="ic-image image-modal-3-3 move-slide"></div>
+`;
+
+let web4 = `
+<div class="ic-image image-modal-4-1 move-slide"></div>
+<div class="ic-image image-modal-4-2 move-slide"></div>
+`;
+
+let web5 = `
+<div class="ic-image image-modal-5-1 move-slide"></div>
+`;
+
 // DESIGN
 
 let design6 = `
@@ -13,6 +39,29 @@ let design6 = `
 <div class="ic-image image-modal-6-3 move-slide"></div>
 <div class="ic-image image-modal-6-4 move-slide"></div>
 <div class="ic-image image-modal-6-5 move-slide"></div>
+`;
+
+let design7 = `
+<div class="ic-image image-modal-7-1 move-slide"></div>
+<div class="ic-image image-modal-7-2 move-slide"></div>
+`;
+
+let design8 = `
+<div class="ic-image image-modal-8-1 move-slide"></div>
+`;
+
+let design9 = `
+<div class="ic-image image-modal-9-1 move-slide"></div>
+`;
+
+let design10 = `
+<div class="ic-image image-modal-10-1 move-slide"></div>
+`;
+
+let design11 = `
+<div class="ic-image image-modal-11-1 move-slide"></div>
+<div class="ic-image image-modal-11-2 move-slide"></div>
+<div class="ic-image image-modal-11-3 move-slide"></div>
 `;
 
 let pGM = {
@@ -88,22 +137,27 @@ let mGM = {
 
          case 1:
             pGM.titulo.innerHTML = pGM.web;
+            pGM.image.innerHTML = web1;
          break;
 
          case 2:
             pGM.titulo.innerHTML = pGM.web;
+            pGM.image.innerHTML = web2;
          break;
 
          case 3:
             pGM.titulo.innerHTML = pGM.web;
+            pGM.image.innerHTML = web3;
          break;
 
          case 4:
             pGM.titulo.innerHTML = pGM.web;
+            pGM.image.innerHTML = web4;
          break;
 
          case 5:
             pGM.titulo.innerHTML = pGM.web;
+            pGM.image.innerHTML = web5;
          break;
 
          case 6:
@@ -113,22 +167,27 @@ let mGM = {
 
          case 7:
             pGM.titulo.innerHTML = pGM.design;
+            pGM.image.innerHTML = design7;
          break;
 
          case 8:
             pGM.titulo.innerHTML = pGM.design;
+            pGM.image.innerHTML = design8;
          break;
 
          case 9:
             pGM.titulo.innerHTML = pGM.design;
+            pGM.image.innerHTML = design9;
          break;
 
          case 10:
             pGM.titulo.innerHTML = pGM.design;
+            pGM.image.innerHTML = design10;
          break;
       
          default:
             pGM.titulo.innerHTML = pGM.design;
+            pGM.image.innerHTML = design11;
          break;
       }
 
