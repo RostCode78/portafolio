@@ -281,7 +281,7 @@
 }
 
 
-/*=========== END MODAL ===========*/
+/*=========== END MODAL IMAGE ===========*/
 
 .btn-modal-slide {
     width: 100%;
@@ -335,6 +335,129 @@
     position: absolute;
 }
 
+.mc-bottom {
+    width: 100%;
+    height: 27%;
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    z-index: 1100;
+}
+
+
+/* MODAL DATOS MIN */
+
+.modal-datos-min {
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 10
+}
+
+.datos-min-left {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.datos-min-left h2 {
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #7d7d7d;
+    margin-bottom: 5px;
+}
+
+.datos-min-left p {
+    width: 80%;
+    height: auto;
+    font-size: 1.3em;
+    color: #303030;
+}
+
+.datos-min-right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.datos-min-right h2 {
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #7d7d7d;
+    margin-bottom: 5px;
+}
+
+.list-technologies {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.list-technologies p {
+    width: 35px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    color: #303030;
+}
+
+
+/* BTN MORE MODAL GALLERY */
+
+.btn-more-modal-gallery {
+    width: 140px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #e6e6e6;
+    border: 3px solid #e6e6e6;
+    box-shadow: 1px 1px 8px #00000052, -1px -1px 8px #ffffff52;
+    transition: .2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.btn-more-modal-gallery p {
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #303030;
+}
+
+.btn-more-modal-gallery:hover {
+    box-shadow: 1px 1px 8px #0000002c, -1px -1px 8px #ffffff2c;
+}
+
+.btn-more-modal-gallery:active {
+    box-shadow: 1px 1px 8px #00000052, -1px -1px 8px #ffffff52, inset 1px 1px 8px #0000002c, inset -1px -1px 8px #ffffff2c;
+}
+
+.btn-more {
+    width: 100%;
+    height: 100%;
+    background-color: #00000000;
+    position: absolute;
+}
+
 
 /*============================
 =           HEADER           =
@@ -342,14 +465,14 @@
 
 header {
     width: 100%;
-    height: 315px;
+    height: 400px;
     position: relative;
 }
 
 .background-image {
     width: 100%;
     height: 100%;
-    background-image: url('../img/background-image.jpg');
+    background-image: url('../img/background-image.webp');
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -386,7 +509,7 @@ header {
 .user-image {
     width: 100%;
     height: 100%;
-    background-image: url('../img/user-image.jpg');
+    background-image: url('../img/user-image.webp');
     background-position: -43px 0px;
     background-size: cover;
 }
