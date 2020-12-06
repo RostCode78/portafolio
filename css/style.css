@@ -20,17 +20,6 @@
     z-index: 1000;
 }
 
-.line-open-data {
-    width: 100%;
-    height: 70px;
-    background-color: #3d3f44;
-    position: absolute;
-    top: 0;
-    left: -100%;
-    z-index: 900;
-    transition: .4s;
-}
-
 .cerrar-btn-modal {
     width: 50px;
     height: 50px;
@@ -372,8 +361,6 @@
     position: absolute;
     top: 0%;
     z-index: 10;
-    transition: .4s;
-    opacity: 1;
 }
 
 .datos-min-left {
@@ -425,47 +412,6 @@
 .list-technologies img {
     width: 25px;
     height: 25px;
-}
-
-
-/* BTN MORE MODAL GALLERY */
-
-.btn-more-modal-gallery {
-    width: 140px;
-    height: 40px;
-    border-radius: 50px;
-    background-color: #e6e6e6;
-    border: 3px solid #e6e6e6;
-    box-shadow: 1px 1px 8px #00000052, -1px -1px 8px #ffffff52;
-    transition: .2s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 10px;
-    z-index: 100;
-    cursor: pointer;
-}
-
-.btn-more-modal-gallery p {
-    font-weight: 300;
-    letter-spacing: 1px;
-    color: #303030;
-}
-
-.btn-more-modal-gallery:hover {
-    box-shadow: 1px 1px 8px #0000002c, -1px -1px 8px #ffffff2c;
-}
-
-.btn-more-modal-gallery:active {
-    box-shadow: 1px 1px 8px #00000052, -1px -1px 8px #ffffff52, inset 1px 1px 8px #0000002c, inset -1px -1px 8px #ffffff2c;
-}
-
-.btn-more {
-    width: 100%;
-    height: 100%;
-    background-color: #00000000;
-    position: absolute;
 }
 
 
