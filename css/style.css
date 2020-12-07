@@ -837,13 +837,8 @@ header {
 
 /* =========== NEWS =========== */
 
-#post {
-    width: 100%;
-    height: 100%;
-    background-color: #ddb152;
-    position: absolute;
-    right: -100%;
-}
+
+/* HERE */
 
 
 /* =========== GALLERY =========== */
@@ -964,7 +959,6 @@ header {
 .gallery-design {
     width: 100%;
     height: 100%;
-    background-color: #6c52dd;
     position: absolute;
     right: -100%;
     display: grid;
@@ -1380,6 +1374,15 @@ header {
 
 .gallery-design-box6:hover .hover-right {
     right: 0%;
+}
+
+@media (max-width: 425px) {
+    .gallery-type {
+        width: 100%;
+    }
+    .gallery-top p {
+        font-size: 1.1em;
+    }
 }
 
 
