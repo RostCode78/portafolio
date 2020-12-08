@@ -50,7 +50,7 @@
 }
 
 .titulo-modal {
-    width: 230px;
+    width: 200px;
     height: 50px;
     position: absolute;
     top: 10px;
@@ -63,13 +63,13 @@
 }
 
 .line-modal {
-    width: 45px;
+    width: 35px;
     height: 3px;
     background-color: #f9f5f4;
 }
 
 .titulo-modal p {
-    font-size: 1.4em;
+    font-size: 1em;
     font-weight: 800;
     letter-spacing: 1px;
     color: #f9f5f4;

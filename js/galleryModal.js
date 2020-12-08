@@ -74,12 +74,12 @@ let design11 = `
 
 const tituloMin0 = `
 <h2>WEbLOVEU</h2>
-<p>Galeria sobre NYC</p>
+<p>Image gallery about NYC.</p>
 `;
 
 const tituloMin1 = `
 <h2>WEbLOVEU</h2>
-<p>404 Not Found Page</p>
+<p>404 Page Not Found</p>
 `;
 
 const tituloMin2 = `
@@ -89,17 +89,17 @@ const tituloMin2 = `
 
 const tituloMin3 = `
 <h2>WEbLOVEU</h2>
-<p>XV años Website</p>
+<p>Quinceañera</p>
 `;
 
 const tituloMin4 = `
 <h2>WEbLOVEU</h2>
-<p>Reto #1</p>
+<p>Challenge #1</p>
 `;
 
 const tituloMin5 = `
 <h2>WEbLOVEU</h2>
-<p>Portafolio</p>
+<p>Portfolio</p>
 `;
 
 const tituloMin6 = `
@@ -208,11 +208,11 @@ let pGM = {
    item: 0,
    web: `
    <div class="line-modal"></div>
-   <p>Desarrollo Web</p>
+   <p>Web Development</p>
    `,
    design: `
    <div class="line-modal"></div>
-   <p>Diseño Grafico</p>
+   <p>Design</p>
    `,
    list: [],
    lastList: 0,
