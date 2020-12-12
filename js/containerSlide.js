@@ -32,7 +32,7 @@ let mCS = {
       pCS.slide.style.left = ` ${ pCS.item * -100 }% `;
       pCS.container.style.transition = ".4s";
 
-      if( pCS.item == 2 ) {
+      if( pCS.item == 1 ) {
 
          pCS.container.style.height = "1488px";
 
