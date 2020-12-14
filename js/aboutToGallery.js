@@ -16,7 +16,7 @@ let mATG = {
    },
 
    go: () => {
-      pCS.slide.style.left = ` ${ 2 * -100 }% `;
+      pCS.slide.style.left = ` ${ 1 * -100 }% `;
       pCS.container.style.height = "1488px";
       pCS.container.style.transition = ".4s";
    }

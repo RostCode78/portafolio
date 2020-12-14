@@ -1373,6 +1373,9 @@ header {
     position: absolute;
 }
 
+
+/* FORM BOX */
+
 .form-box {
     width: 70%;
     height: 571px;
@@ -1382,6 +1385,40 @@ header {
     left: 10%;
     z-index: 1;
 }
+
+.form-container {
+    width: 55%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 5;
+}
+
+.form-title {
+    font-size: 3vw;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 4px;
+    line-height: 45px;
+    width: 90%;
+    height: 18%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+form {
+    width: 90%;
+    height: 70%;
+    background-color: #379665;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+
+/* DATA BOX */
 
 .data-box {
     width: 30%;
@@ -1567,3 +1604,31 @@ header {
         height: 1208px;
     }
 }
+
+
+/*=============================================
+PANTALLA DE ESCRITORIO GRANDE - LARGE (lg) - revisamos en portatil o pc
+=============================================*/
+
+@media(min-width:1200px) {}
+
+
+/*=============================================
+PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 1024px
+=============================================*/
+
+@media(max-width:1199px) and (min-width:992px) {}
+
+
+/*=============================================
+PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical 768px
+=============================================*/
+
+@media(max-width:991px) and (min-width:768px) {}
+
+
+/*=============================================
+PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o vertical 320px
+=============================================*/
+
+@media(max-width:767px) {}
